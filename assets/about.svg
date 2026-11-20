@@ -48,7 +48,7 @@
     <text x="36" y="195" fill="#c4b1bc">Salesforce PD1 (91%) · IIT Bombay Java + PostgreSQL</text>
 
     <text class="cmd-glow" x="36" y="224" fill="#f472b6">$ ls ./projects</text>
-    <text x="36" y="243" fill="#f9a8d4">CodePulse-AI/    Campus360/</text>
+    <text x="36" y="243" fill="#f9a8d4">Lets'Track/    Campus360/</text>
 
     <text class="cmd-glow" x="36" y="272" fill="#f472b6">$ echo $GOAL</text>
     <text x="135" y="272" fill="#c4b1bc">"Scalable systems, Data Science, and DSA."</text>
