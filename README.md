@@ -42,12 +42,12 @@
 
 <p align="center">
   <a href="https://github.com/vishnuprasathviswanathan2107-art/Let-sTrack">
-    <img src="./assets/project-codepulse.svg" width="100%" alt="CodePulse AI Project" />
+    <img src="./assets/project-codepulse.svg" width="100%" alt="Let'Track Project" />
   </a>
 </p>
 <p align="center">
   <a href="https://github.com/vishnuprasathviswanathan2107-art/Let-sTrack">
-    <img src="https://img.shields.io/badge/REPOSITORY-CODEPULSE_AI-9d174d?style=for-the-badge&logo=github&logoColor=white&labelColor=130b14" alt="CodePulse AI Repo" />
+    <img src="https://img.shields.io/badge/REPOSITORY-LET%27TRACK-9d174d?style=for-the-badge&logo=github&logoColor=white&labelColor=130b14" alt="Let'Track Repo" />
   </a>
 </p>
 
