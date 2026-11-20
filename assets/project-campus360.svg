@@ -1,20 +1,36 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 235" width="900" height="235">
   <defs>
     <radialGradient id="p2Glow" cx="85%" cy="50%" r="55%">
-      <stop offset="0%" stop-color="#9d174d" stop-opacity="0.36" />
+      <stop offset="0%" stop-color="#9d174d" stop-opacity="0.4" />
       <stop offset="100%" stop-color="#0d0910" stop-opacity="0" />
     </radialGradient>
   </defs>
 
+  <style>
+    .layer-1 { animation: layerPulse 3.6s ease-in-out infinite 0s; }
+    .layer-2 { animation: layerPulse 3.6s ease-in-out infinite 1.2s; }
+    .layer-3 { animation: layerPulse 3.6s ease-in-out infinite 2.4s; }
+    .dot-1 { animation: dotActive 3.6s ease-in-out infinite 0s; }
+    .dot-2 { animation: dotActive 3.6s ease-in-out infinite 1.2s; }
+    .dot-3 { animation: dotActive 3.6s ease-in-out infinite 2.4s; }
+
+    @keyframes layerPulse {
+      0%, 100% { stroke: #4c1d3d; stroke-width: 1; }
+      33% { stroke: #f472b6; stroke-width: 1.8; }
+    }
+    @keyframes dotActive {
+      0%, 100% { opacity: 0.25; }
+      33% { opacity: 1; }
+    }
+  </style>
+
   <rect width="900" height="235" rx="16" fill="#0d0910" stroke="#33182c" stroke-width="1.5" />
   <rect width="900" height="235" rx="16" fill="url(#p2Glow)" />
 
-  <!-- Left Content -->
   <text x="36" y="40" fill="#c08497" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1.5">02 · ENTERPRISE · MVC · DATA WORKFLOWS</text>
   <text x="36" y="78" fill="#ffffff" font-family="Georgia, serif" font-size="30" font-weight="700">Campus360</text>
   <text x="36" y="104" fill="#b8a1af" font-family="system-ui, sans-serif" font-size="13">Faculty management system streamlining academic administration workflows.</text>
 
-  <!-- Key Highlights Row -->
   <text x="36" y="148" fill="#ffffff" font-family="Georgia, serif" font-size="19" font-weight="700">MVC</text>
   <text x="36" y="166" fill="#8e7484" font-family="system-ui, sans-serif" font-size="11">clean architecture</text>
 
@@ -24,7 +40,6 @@
   <text x="315" y="148" fill="#ffffff" font-family="Georgia, serif" font-size="19" font-weight="700">SFDX</text>
   <text x="315" y="166" fill="#8e7484" font-family="system-ui, sans-serif" font-size="11">source-driven deploys</text>
 
-  <!-- Tech Pills -->
   <g font-family="ui-monospace, monospace" font-size="10.5" fill="#e5d9e0">
     <rect x="36" y="188" width="84" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
     <text x="47" y="203">Salesforce</text>
@@ -38,16 +53,18 @@
     <text x="313" y="203">Git</text>
   </g>
 
-  <!-- Right Layered Architecture Diagram -->
-  <rect x="570" y="42" width="290" height="150" rx="12" fill="#140b18" fill-opacity="0.75" stroke="#4c1d3d" stroke-width="1" />
+  <rect x="570" y="42" width="290" height="150" rx="12" fill="#140b18" fill-opacity="0.8" stroke="#4c1d3d" stroke-width="1" />
   <text x="590" y="64" fill="#c08497" font-family="ui-monospace, monospace" font-size="9.5" letter-spacing="1.2">SYSTEM LAYERS</text>
 
-  <rect x="595" y="76" width="240" height="28" rx="6" fill="#24112c" stroke="#f472b6" stroke-width="1" />
+  <rect class="layer-1" x="595" y="76" width="240" height="28" rx="6" fill="#24112c" stroke="#f472b6" stroke-width="1" />
+  <circle class="dot-1" cx="611" cy="90" r="3" fill="#f472b6" />
   <text x="645" y="94" fill="#ffffff" font-family="ui-monospace, monospace" font-size="10.5">LWC Admin Portals</text>
 
-  <rect x="595" y="112" width="240" height="28" rx="6" fill="#1c0f24" stroke="#9d174d" stroke-width="1" />
+  <rect class="layer-2" x="595" y="112" width="240" height="28" rx="6" fill="#1c0f24" stroke="#9d174d" stroke-width="1" />
+  <circle class="dot-2" cx="611" cy="126" r="3" fill="#f472b6" />
   <text x="640" y="130" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="10.5">Apex Controllers (MVC)</text>
 
-  <rect x="595" y="148" width="240" height="28" rx="6" fill="#160c1d" stroke="#4c1d3d" stroke-width="1" />
+  <rect class="layer-3" x="595" y="148" width="240" height="28" rx="6" fill="#160c1d" stroke="#4c1d3d" stroke-width="1" />
+  <circle class="dot-3" cx="611" cy="162" r="3" fill="#f472b6" />
   <text x="640" y="166" fill="#c4b1bc" font-family="ui-monospace, monospace" font-size="10.5">SOQL / Faculty Records</text>
 </svg>
