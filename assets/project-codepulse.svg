@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 235" width="900" height="235">
+  <defs>
+    <radialGradient id="p1Glow" cx="85%" cy="50%" r="55%">
+      <stop offset="0%" stop-color="#be185d" stop-opacity="0.38" />
+      <stop offset="100%" stop-color="#0d0910" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="900" height="235" rx="16" fill="#0d0910" stroke="#33182c" stroke-width="1.5" />
+  <rect width="900" height="235" rx="16" fill="url(#p1Glow)" />
+
+  <!-- Left Content -->
+  <text x="36" y="40" fill="#c08497" font-family="ui-monospace, monospace" font-size="10.5" letter-spacing="1.5">01 · SALESFORCE · AUTOMATION · FULL-STACK</text>
+  <text x="36" y="78" fill="#ffffff" font-family="Georgia, serif" font-size="30" font-weight="700">CodePulse AI</text>
+  <text x="36" y="104" fill="#b8a1af" font-family="system-ui, sans-serif" font-size="13">Gamified coding habit tracker delivering LeetCode & CodeChef challenges.</text>
+
+  <!-- Key Highlights Row -->
+  <text x="36" y="148" fill="#ffffff" font-family="Georgia, serif" font-size="19" font-weight="700">Scheduled</text>
+  <text x="36" y="166" fill="#8e7484" font-family="system-ui, sans-serif" font-size="11">daily challenge rotation</text>
+
+  <text x="180" y="148" fill="#ffffff" font-family="Georgia, serif" font-size="19" font-weight="700">Normalized</text>
+  <text x="180" y="166" fill="#8e7484" font-family="system-ui, sans-serif" font-size="11">junction data model</text>
+
+  <text x="335" y="148" fill="#ffffff" font-family="Georgia, serif" font-size="19" font-weight="700">1-Click</text>
+  <text x="335" y="166" fill="#8e7484" font-family="system-ui, sans-serif" font-size="11">tokenized email actions</text>
+
+  <!-- Tech Pills -->
+  <g font-family="ui-monospace, monospace" font-size="10.5" fill="#e5d9e0">
+    <rect x="36" y="188" width="52" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
+    <text x="48" y="203">Apex</text>
+    <rect x="96" y="188" width="46" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
+    <text x="108" y="203">LWC</text>
+    <rect x="150" y="188" width="52" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
+    <text x="162" y="203">SOQL</text>
+    <rect x="210" y="188" width="76" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
+    <text x="221" y="203">REST API</text>
+    <rect x="294" y="188" width="114" height="22" rx="6" fill="#1d1024" stroke="#4c1d3d" />
+    <text x="305" y="203">Scheduled Apex</text>
+  </g>
+
+  <!-- Right Architecture Diagram -->
+  <rect x="570" y="42" width="290" height="150" rx="12" fill="#140b18" fill-opacity="0.75" stroke="#4c1d3d" stroke-width="1" />
+  <text x="590" y="64" fill="#c08497" font-family="ui-monospace, monospace" font-size="9.5" letter-spacing="1.2">AUTOMATION PIPELINE</text>
+
+  <rect x="590" y="82" width="96" height="34" rx="8" fill="#1f1026" stroke="#f472b6" stroke-width="1" />
+  <text x="604" y="103" fill="#ffffff" font-family="ui-monospace, monospace" font-size="10.5">Cron / Apex</text>
+
+  <line x1="686" y1="99" x2="736" y2="99" stroke="#f472b6" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <rect x="736" y="82" width="104" height="34" rx="8" fill="#1f1026" stroke="#9d174d" stroke-width="1" />
+  <text x="748" y="103" fill="#f9a8d4" font-family="ui-monospace, monospace" font-size="10.5">Streak Engine</text>
+
+  <line x1="788" y1="116" x2="788" y2="140" stroke="#f472b6" stroke-width="1.2" stroke-dasharray="3,3" />
+
+  <rect x="590" y="140" width="250" height="34" rx="8" fill="#190e20" stroke="#4c1d3d" stroke-width="1" />
+  <text x="615" y="161" fill="#e5d9e0" font-family="ui-monospace, monospace" font-size="10.5">LWC Dashboard  +  Leaderboard</text>
+</svg>
