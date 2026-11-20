@@ -1,10 +1,31 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 310" width="900" height="310">
   <defs>
     <radialGradient id="aboutGlow" cx="95%" cy="10%" r="55%">
-      <stop offset="0%" stop-color="#9d174d" stop-opacity="0.32" />
+      <stop offset="0%" stop-color="#9d174d" stop-opacity="0.35" />
       <stop offset="100%" stop-color="#0d0910" stop-opacity="0" />
     </radialGradient>
   </defs>
+
+  <style>
+    .cursor { animation: blink 1s step-end infinite; }
+    .card-1 { animation: borderWave 4.5s ease-in-out infinite 0s; }
+    .card-2 { animation: borderWave 4.5s ease-in-out infinite 1.5s; }
+    .card-3 { animation: borderWave 4.5s ease-in-out infinite 3s; }
+    .cmd-glow { animation: textPulse 4s ease-in-out infinite; }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    @keyframes borderWave {
+      0%, 100% { stroke: #3d1c34; stroke-width: 1; }
+      30% { stroke: #f472b6; stroke-width: 1.6; }
+    }
+    @keyframes textPulse {
+      0%, 100% { fill: #f472b6; }
+      50% { fill: #fbcfe8; }
+    }
+  </style>
 
   <rect width="900" height="310" rx="16" fill="#0d0910" stroke="#2d1627" stroke-width="1.5" />
   <rect width="900" height="310" rx="16" fill="url(#aboutGlow)" />
@@ -17,34 +38,35 @@
   <line x1="20" y1="54" x2="570" y2="54" stroke="#261321" stroke-width="1" />
 
   <g font-family="ui-monospace, SFMono-Regular, Menlo, monospace" font-size="12">
-    <text x="36" y="80" fill="#f472b6">$ whoami</text>
+    <text class="cmd-glow" x="36" y="80" fill="#f472b6">$ whoami</text>
     <text x="36" y="99" fill="#e5d9e0">Vishnu Prasath V — Software + Salesforce Developer</text>
 
-    <text x="36" y="128" fill="#f472b6">$ cat education.txt</text>
+    <text class="cmd-glow" x="36" y="128" fill="#f472b6">$ cat education.txt</text>
     <text x="36" y="147" fill="#c4b1bc">B.Tech IT · Karpagam College of Engineering · CGPA 7.43</text>
 
-    <text x="36" y="176" fill="#f472b6">$ cat credentials.txt</text>
+    <text class="cmd-glow" x="36" y="176" fill="#f472b6">$ cat credentials.txt</text>
     <text x="36" y="195" fill="#c4b1bc">Salesforce PD1 (91%) · IIT Bombay Java + PostgreSQL</text>
 
-    <text x="36" y="224" fill="#f472b6">$ ls ./projects</text>
+    <text class="cmd-glow" x="36" y="224" fill="#f472b6">$ ls ./projects</text>
     <text x="36" y="243" fill="#f9a8d4">CodePulse-AI/    Campus360/</text>
 
-    <text x="36" y="272" fill="#f472b6">$ echo $GOAL</text>
-    <text x="135" y="272" fill="#c4b1bc">"Reliable backends, clean data models, and DSA."</text>
+    <text class="cmd-glow" x="36" y="272" fill="#f472b6">$ echo $GOAL</text>
+    <text x="135" y="272" fill="#c4b1bc">"Scalable systems, Data Science, and DSA."</text>
+    <rect class="cursor" x="444" y="261" width="7" height="13" fill="#f472b6" />
   </g>
 
-  <rect x="590" y="20" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
+  <rect class="card-1" x="590" y="20" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
   <text x="610" y="43" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1.5" font-weight="600">PRIMARY LANGUAGES</text>
   <text x="610" y="68" fill="#ffffff" font-family="Georgia, serif" font-size="20" font-weight="700">Java + Apex</text>
   <text x="610" y="87" fill="#9c8392" font-family="system-ui, sans-serif" font-size="11">OOP · Data Structures · Algorithms</text>
 
-  <rect x="590" y="114" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
-  <text x="610" y="137" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1.5" font-weight="600">DATA AND DATABASES</text>
+  <rect class="card-2" x="590" y="114" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
+  <text x="610" y="137" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1.5" font-weight="600">DATA SCIENCE + DB</text>
   <text x="610" y="162" fill="#ffffff" font-family="Georgia, serif" font-size="20" font-weight="700">PostgreSQL + SQL</text>
   <text x="610" y="181" fill="#9c8392" font-family="system-ui, sans-serif" font-size="11">RDBMS · MySQL · SOQL · Data Modeling</text>
 
-  <rect x="590" y="208" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
-  <text x="610" y="231" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1.5" font-weight="600">SYSTEMS AND TOOLS</text>
+  <rect class="card-3" x="590" y="208" width="290" height="82" rx="12" fill="#160d1b" stroke="#3d1c34" stroke-width="1" />
+  <text x="610" y="231" fill="#f472b6" font-family="system-ui, sans-serif" font-size="10" letter-spacing="1.5" font-weight="600">SYSTEM ARCHITECTURE</text>
   <text x="610" y="256" fill="#ffffff" font-family="Georgia, serif" font-size="20" font-weight="700">REST APIs + LWC</text>
   <text x="610" y="275" fill="#9c8392" font-family="system-ui, sans-serif" font-size="11">Linux · Docker · Git · Salesforce DX</text>
 </svg>
